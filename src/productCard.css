@@ -1,0 +1,136 @@
+.productCard {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  display: grid;
+}
+h3 {
+  font-size: 30px;
+}
+/*----- product description organization (flexbox) ------------ */
+
+.belowImage {
+  width:375px;
+  display:block;
+}
+
+.productDescriptionRow{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items:baseline;
+  text-align:left;
+}
+
+.productDescriptionCol{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  align-items:right;
+}
+
+
+
+.product-image {
+  width: 375px;
+  height:375px;
+  border-style: solid;
+  border-width: thick;
+  border-color: black;
+  
+}
+
+.theImage{
+  display:block;
+  text-align:left;
+}
+/*----- dropdown menu  ------------ */
+.dropdown-menu{
+  width: 250px;
+  border: 1px solid black;
+  border-width: medium;
+  overflow: hidden; 
+  display: flex;
+  align-items:center;
+  padding: 5px 5px 5px 5px; /*top right bottom left*/
+}
+
+select {
+  appearance: none;
+  width: 250px;
+  border: 1px solid black;
+  border-width: medium;
+  overflow: hidden; 
+  display: flex;
+  align-items:center;
+  height: 45px;
+  font-size: 20px;
+}
+
+.selected-option{
+  width: 300px;
+  float:left; /* add this */
+  font-size: 20px;
+}
+
+/*drop down menu button END */
+
+
+
+/*------------- Select Pack Size ---------------*/
+.pack-size-buttons{
+  display: flex;
+  column-gap: 15px;
+  font-size: 20px;
+}
+
+
+.pack-size-buttons-list{
+  display: flex;
+  /*justify-content: space-between;*/
+  column-gap: 20px;
+}
+.pack-size-button{
+  width:45px;
+  height:45px;
+  background-color: white;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px; /*WHY NECESSARY?*/
+  border: 1px solid black;
+  border-width:medium;
+  
+}
+.pack-size-button-text{
+  vertical-align: middle;
+}
+.gray{
+  background-color:rgb(172, 168, 168);
+}
+
+/*---------- Add To Cart button --------------*/
+.add-to-cart-button{
+  width: 250px;
+  height: 40px;
+  border: 1px solid black;
+  border-width: medium;
+  overflow: hidden; /* add this to contain floated children */
+  display: flex;
+  align-items:center;
+  padding: 5px 5px 5px 5px; /*top right bottom left*/
+}
+
+.add-to-cart-button:hover{
+  background-color: #ffff00;
+}
+
+.addtocart-text{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
