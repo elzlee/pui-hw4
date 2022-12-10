@@ -8,7 +8,7 @@ import NavBar from './navBar';
 
 
 /*
-Cart data: dictionary {id #: (productName, glazing, packSize, price)}
+Cart data: dictionary {id #: (productName, glazing, packSize, updatedPrice)}
 3sec popup: make popup div with info from the dict row
 Loop through each item in dict to get price for Total Cart Sum.
 */
@@ -21,10 +21,16 @@ function HomePage () {
 
   // Define a callback function that updates the state
   const callback_AddToCartList = () => {
+    /* Pass this into the child component 'productCard' as a prop 
+       to allow child component to update cartData list 
+       in this parent component. 
+       This */
+    /* 
     setState((state) => ({
       ...state,
-      count: state.count + 1,
+      count: state.count + 1
     }));
+    */
   };
 
   return (

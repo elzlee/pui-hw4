@@ -54,7 +54,18 @@ class ProductCard extends Component {
                   }); 
   }
 
-  
+  addToCartListHandler = (event) => {
+    /* Call this function when Add To Cart button is pressed */
+    // create the dict object to append to CartList
+    let cartObject = {
+      productName: this.state.productName,
+      packsize: this.state.rollPackSize,
+      glazing: this.state.rollGlazing,
+      updatedprice : this.state.updatedPrice
+    }
+    // Call callback_AddToCartList (passed in as a prop)
+  }
+
   render() {
     return (
       <div className="productCard" >
@@ -106,7 +117,7 @@ class ProductCard extends Component {
                 <h3 id="originalRollPrice">${this.state.updatedPrice}</h3>
               </div>
               <div className="productDescriptionCol">
-                <div className="add-to-cart-button">
+                <div className="add-to-cart-button" onClick={this.addToCartListHandler}>
                   <div className="addtocart-text"><h3>Add To Cart</h3></div>
                 </div>
               </div>
